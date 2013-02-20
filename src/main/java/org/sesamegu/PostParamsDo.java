@@ -1,0 +1,45 @@
+package org.sesamegu;
+
+public class PostParamsDo {
+
+	private String targetUrl;
+
+	private String personalId;
+
+	private String area;
+
+	private String jiaoxiaoName;
+
+	public String getTargetUrl() {
+		return targetUrl;
+	}
+
+	public void setTargetUrl(String targetUrl) {
+		this.targetUrl = targetUrl;
+	}
+
+	public String getPersonalId() {
+		return personalId;
+	}
+
+	public void setPersonalId(String personalId) {
+		this.personalId = personalId;
+	}
+
+	public String getArea() {
+		return area;
+	}
+
+	public void setArea(String area) {
+		this.area = area;
+	}
+
+	public String getJiaoxiaoName() {
+		return jiaoxiaoName;
+	}
+
+	public void setJiaoxiaoName(String jiaoxiaoName) {
+		this.jiaoxiaoName = jiaoxiaoName;
+	}
+
+}
