@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
@@ -11,16 +12,21 @@ import org.apache.http.NameValuePair;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.message.BasicNameValuePair;
-import org.apache.http.protocol.HTTP;
 import org.apache.log4j.Logger;
 
-public class AccessReserverPage {
+/**
+ * 小程序的整体流程： 1）先访问get页面，取得token和cookie，其中cookie由http client自动完成填充;
+ * 2）准备表单数据，并提交；\n 3）检查表单返回的结果；
+ */
+public class AccessReserverPostPage {
 
 	private final String POST_PAGE_URL = "/xqc/mlpxyy/mCheck.php";
+
 	private final String POST_AREA = "01";
 	private final String POST_JX_NAME = "01HJG100";
 
-	public static final Logger log = Logger.getLogger(AccessReserverPage.class);
+	public static final Logger log = Logger
+			.getLogger(AccessReserverPostPage.class);
 
 	public boolean isOk(String personalId) {
 		PostParamsDo postParamsDo = new PostParamsDo();
@@ -29,18 +35,29 @@ public class AccessReserverPage {
 		postParamsDo.setArea(POST_AREA);
 		postParamsDo.setJiaoxiaoName(POST_JX_NAME);
 
+		AccessReserverGetPage get = new AccessReserverGetPage();
+
+		postParamsDo.setToken(get.getToken());
+
+		try {
+			TimeUnit.SECONDS.sleep(3);
+			log.debug("休息3秒");
+		} catch (InterruptedException e) {
+		}
+
 		String resultString = doPost(postParamsDo);
 		if (resultString == null) {
 			log.error("Errors happen!");
 			return false;
 		}
 
-		if (resultString.indexOf("请从杭州机动车驾驶员模拟培训官方网站上预约！<BR>www.qc5qc.com") != -1) {
-			log.info("Still not ok!");
+		if (resultString
+				.indexOf("<script language='javascript'>alert('该学员已完成模拟培训。');history.back(-1);</script>") != -1) {
+			log.info("不好意思，当前还不能报名！");
 			return false;
 		}
 
-		log.info("Happy X! ok now!");
+		log.info("执行成功，可以报名了！");
 
 		return true;
 	}
@@ -54,11 +71,10 @@ public class AccessReserverPage {
 		nvps.add(new BasicNameValuePair("userSsn", postParamsDo.getPersonalId()));
 		nvps.add(new BasicNameValuePair("province", postParamsDo.getArea()));
 		nvps.add(new BasicNameValuePair("city", postParamsDo.getJiaoxiaoName()));
-		nvps.add(new BasicNameValuePair("token",
-				"5f3b43c915777b3e003e4359ad191f4c"));
+		nvps.add(new BasicNameValuePair("token", postParamsDo.getToken()));
 
 		try {
-			httpost.setEntity(new UrlEncodedFormEntity(nvps, HTTP.UTF_8));
+			httpost.setEntity(new UrlEncodedFormEntity(nvps, "GBK"));
 			HttpResponse response = HttpUtils.getHttpClient().execute(
 					HttpUtils.site, httpost);
 
@@ -66,10 +82,10 @@ public class AccessReserverPage {
 			// String sb = EntityUtils.toString(entity, "GBK");
 			// EntityUtils.consume(entity);
 
-			log.info("----------------------------------------");
-			log.info(response.getStatusLine());
+			log.debug("----------------------------------------");
+			log.debug(response.getStatusLine());
 			if (entity != null) {
-				log.info("Response content length: "
+				log.debug("Response content length: "
 						+ entity.getContentLength());
 			}
 			// // 显示结果

@@ -10,6 +10,8 @@ public class PostParamsDo {
 
 	private String jiaoxiaoName;
 
+	private String token;
+
 	public String getTargetUrl() {
 		return targetUrl;
 	}
@@ -40,6 +42,14 @@ public class PostParamsDo {
 
 	public void setJiaoxiaoName(String jiaoxiaoName) {
 		this.jiaoxiaoName = jiaoxiaoName;
+	}
+
+	public String getToken() {
+		return token;
+	}
+
+	public void setToken(String token) {
+		this.token = token;
 	}
 
 }

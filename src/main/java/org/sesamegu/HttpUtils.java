@@ -1,7 +1,10 @@
 package org.sesamegu;
 
+import java.util.List;
+
 import org.apache.http.HttpHost;
 import org.apache.http.client.HttpClient;
+import org.apache.http.cookie.Cookie;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager;
 import org.apache.log4j.Logger;
@@ -15,26 +18,35 @@ public class HttpUtils {
 
 	public static final HttpHost site = new HttpHost(HOST, PORT, "http");
 
+	private static List<Cookie> logoncookies;
+
 	static {
 		ThreadSafeClientConnManager cm = new ThreadSafeClientConnManager();
 		cm.setMaxTotal(50);
-
 		// 多线程的
 		httpClient = new DefaultHttpClient(cm);
-		// 初始化httpclient
-		// httpClient.getHostConfiguration().setHost(HOST, PORT);
-		// httpClient.getParams().setParameter(
-		// CoreProtocolPNames.HTTP_ELEMENT_CHARSET, "GBK");
-		// httpClient.getParams().setParameter(
-		// CoreProtocolPNames.HTTP_CONTENT_CHARSET, "GBK");
-		// TODO:
-		// httpClient.getParams().setCookiePolicy(
-		// CookiePolicy.BROWSER_COMPATIBILITY);
 
 	}
 
 	public static HttpClient getHttpClient() {
 		return httpClient;
+	}
+
+	public static String getCookieString() {
+		StringBuffer stringBuffer = new StringBuffer();
+		for (Cookie item : logoncookies) {
+			stringBuffer.append(item.toString());
+			stringBuffer.append(";");
+		}
+		if (stringBuffer.length() > 1) {
+			return stringBuffer.substring(0, stringBuffer.length() - 1)
+					.toString();
+		}
+		return stringBuffer.toString();
+	}
+
+	public static void setLogoncookies(List<Cookie> logoncookies) {
+		HttpUtils.logoncookies = logoncookies;
 	}
 
 }

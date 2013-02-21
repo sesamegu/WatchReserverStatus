@@ -2,18 +2,20 @@ package org.sesamegu;
 
 import java.util.concurrent.TimeUnit;
 
+import org.apache.log4j.Logger;
+
 /**
- * Hello world!
- * 
+ * 系统主入口
  */
 public class App {
-	public static void main(String[] args) throws InterruptedException {
 
-		AccessReserverPage abc = new AccessReserverPage();
-		while (!abc.isOk("tttt")) {
-			// TimeUnit.SECONDS.sleep(3);
-			TimeUnit.MINUTES.sleep(30);
+	public static final Logger log = Logger.getLogger(App.class);
+
+	public static void main(String[] args) throws InterruptedException {
+		AccessReserverPostPage abc = new AccessReserverPostPage();
+		while (!abc.isOk(SystemParams.id)) {
+			TimeUnit.MINUTES.sleep(5);
 		}
-		System.out.println("*************:))))))))))))))))))))!");
+		log.info("系统正常结束！");
 	}
 }
