@@ -1,6 +1,8 @@
 package org.sesamegu;
 
 import java.util.List;
+import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
@@ -18,13 +20,23 @@ public class AccessReserverGetPage {
 	private static final String FLAG = "<input type=\"hidden\" name=\"token\" id=\"token\" value=\"";
 
 	public String getToken() {
-		String result = executeGet(RESERVER_PAGE_URL);
-		log.debug("首页文本：\n" + result);
-		return pasrseFormHash(result);
+		CountDownLatch cdl = new CountDownLatch(1);
+		CurlThread def = new CurlThread(cdl);
+		Thread abc = new Thread(def);
+		abc.start();
+		try {
+			cdl.await(10l, TimeUnit.SECONDS);
+			if (abc.isAlive()) {
+				log.info("One Thread die!");
+				abc.interrupt();
+			}
+		} catch (InterruptedException e) {
+		}
+		return def.getToken();
 	}
 
 	// 从response中取得formhash
-	String pasrseFormHash(String response) {
+	public static String pasrseFormHash(String response) {
 
 		String[] split = response.split("\n");
 		for (String item : split) {
@@ -43,7 +55,7 @@ public class AccessReserverGetPage {
 	/**
 	 * 取得对应URL的文本
 	 */
-	public static String executeGet(String url) {
+	public static String executeGet() {
 		String result;
 		HttpGet httpget = new HttpGet(RESERVER_PAGE_URL);
 		try {
@@ -69,6 +81,29 @@ public class AccessReserverGetPage {
 			return "";
 		}
 		return result;
+	}
+
+	class CurlThread implements Runnable {
+
+		private CountDownLatch cdl;
+		private String token;
+
+		public CurlThread(CountDownLatch cdl) {
+			this.cdl = cdl;
+		}
+
+		@Override
+		public void run() {
+			String result = executeGet();
+			log.debug("首页文本：\n" + result);
+			token = pasrseFormHash(result);
+			cdl.countDown();
+		}
+
+		public String getToken() {
+			return token;
+		}
+
 	}
 
 	public static void main(String[] args) {
