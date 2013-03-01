@@ -23,10 +23,11 @@ public class AccessReserverGetPage {
 		CountDownLatch cdl = new CountDownLatch(1);
 		CurlThread def = new CurlThread(cdl);
 		Thread abc = new Thread(def);
+		abc.setDaemon(true);
 		abc.start();
 		try {
-			cdl.await(10l, TimeUnit.SECONDS);
-			if (abc.isAlive()) {
+			boolean isEnd = cdl.await(10l, TimeUnit.SECONDS);
+			if (!isEnd) {
 				log.info("One Thread die!");
 				abc.interrupt();
 			}
@@ -92,7 +93,6 @@ public class AccessReserverGetPage {
 			this.cdl = cdl;
 		}
 
-		@Override
 		public void run() {
 			String result = executeGet();
 			log.debug("首页文本：\n" + result);

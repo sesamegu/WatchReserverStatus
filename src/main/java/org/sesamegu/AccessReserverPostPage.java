@@ -37,7 +37,13 @@ public class AccessReserverPostPage {
 
 		AccessReserverGetPage get = new AccessReserverGetPage();
 
-		postParamsDo.setToken(get.getToken());
+		String token = get.getToken();
+		if (token == null || token.equals("")) {
+			log.error("Errors happen!");
+			return false;
+		}
+
+		postParamsDo.setToken(token);
 
 		try {
 			TimeUnit.SECONDS.sleep(3);
