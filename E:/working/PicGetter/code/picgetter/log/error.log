@@ -1,0 +1,19 @@
+2013-03-01 14:55:33,327 [] ERROR sesamegu.AccessReserverPostPage - Errors happen!
+2013-03-01 14:56:20,192 [] ERROR sesamegu.AccessReserverPostPage - execute post method
+org.apache.http.NoHttpResponseException: The target server failed to respond
+	at org.apache.http.impl.conn.DefaultResponseParser.parseHead(DefaultResponseParser.java:101)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:252)
+	at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:281)
+	at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:247)
+	at org.apache.http.impl.conn.AbstractClientConnAdapter.receiveResponseHeader(AbstractClientConnAdapter.java:219)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:298)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:622)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:454)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:820)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:776)
+	at org.sesamegu.AccessReserverPostPage.doPost(AccessReserverPostPage.java:84)
+	at org.sesamegu.AccessReserverPostPage.isOk(AccessReserverPostPage.java:54)
+	at org.sesamegu.App.main(App.java:16)
+2013-03-01 14:56:20,193 [] ERROR sesamegu.AccessReserverPostPage - Errors happen!
+2013-03-01 15:03:56,371 [] ERROR sesamegu.AccessReserverPostPage - Errors happen!

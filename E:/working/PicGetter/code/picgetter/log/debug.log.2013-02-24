@@ -1,0 +1,511 @@
+2013-02-24 10:24:56,904 [] DEBUG tsccm.ThreadSafeClientConnManager - Get connection: HttpRoute[{}->http://www.qc5qc.com:80], timeout = 0
+2013-02-24 10:24:56,924 [] DEBUG tsccm.ConnPoolByRoute - [HttpRoute[{}->http://www.qc5qc.com:80]] total kept alive: 0, total issued: 0, total allocated: 0 out of 50
+2013-02-24 10:24:56,924 [] DEBUG tsccm.ConnPoolByRoute - No free connections [HttpRoute[{}->http://www.qc5qc.com:80]][null]
+2013-02-24 10:24:56,924 [] DEBUG tsccm.ConnPoolByRoute - Available capacity: 2 out of 2 [HttpRoute[{}->http://www.qc5qc.com:80]][null]
+2013-02-24 10:24:56,924 [] DEBUG tsccm.ConnPoolByRoute - Creating new connection [HttpRoute[{}->http://www.qc5qc.com:80]]
+2013-02-24 10:24:57,424 [] DEBUG conn.DefaultClientConnectionOperator - Connecting to www.qc5qc.com/60.191.117.73:80
+2013-02-24 10:24:57,572 [] DEBUG protocol.RequestAddCookies - CookieSpec selected: best-match
+2013-02-24 10:24:57,587 [] DEBUG client.DefaultHttpClient - Attempt 1 to execute request
+2013-02-24 10:24:57,588 [] DEBUG conn.DefaultClientConnection - Sending request: GET /xqc/mlpxyy/mlpxyy.php HTTP/1.1
+2013-02-24 10:24:57,594 [] DEBUG http.wire - >> "GET /xqc/mlpxyy/mlpxyy.php HTTP/1.1[\r][\n]"
+2013-02-24 10:24:57,595 [] DEBUG http.wire - >> "Host: www.qc5qc.com:80[\r][\n]"
+2013-02-24 10:24:57,595 [] DEBUG http.wire - >> "Connection: Keep-Alive[\r][\n]"
+2013-02-24 10:24:57,595 [] DEBUG http.wire - >> "User-Agent: Apache-HttpClient/4.1 (java 1.5)[\r][\n]"
+2013-02-24 10:24:57,595 [] DEBUG http.wire - >> "[\r][\n]"
+2013-02-24 10:24:57,595 [] DEBUG http.headers - >> GET /xqc/mlpxyy/mlpxyy.php HTTP/1.1
+2013-02-24 10:24:57,595 [] DEBUG http.headers - >> Host: www.qc5qc.com:80
+2013-02-24 10:24:57,595 [] DEBUG http.headers - >> Connection: Keep-Alive
+2013-02-24 10:24:57,595 [] DEBUG http.headers - >> User-Agent: Apache-HttpClient/4.1 (java 1.5)
+2013-02-24 10:24:57,985 [] DEBUG http.wire - << "HTTP/1.1 200 OK[\r][\n]"
+2013-02-24 10:24:57,998 [] DEBUG http.wire - << "Date: Sun, 24 Feb 2013 02:23:35 GMT[\r][\n]"
+2013-02-24 10:24:57,998 [] DEBUG http.wire - << "Server: Apache/2.0.63 (Win32) PHP/5.2.10[\r][\n]"
+2013-02-24 10:24:57,998 [] DEBUG http.wire - << "X-Powered-By: PHP/5.2.10[\r][\n]"
+2013-02-24 10:24:57,998 [] DEBUG http.wire - << "Set-Cookie: PHPSESSID=c41fkb1nprsv4kpqsi8g54ja74; path=/[\r][\n]"
+2013-02-24 10:24:57,998 [] DEBUG http.wire - << "Content-Length: 6774[\r][\n]"
+2013-02-24 10:24:57,998 [] DEBUG http.wire - << "Keep-Alive: timeout=15, max=100[\r][\n]"
+2013-02-24 10:24:57,998 [] DEBUG http.wire - << "Connection: Keep-Alive[\r][\n]"
+2013-02-24 10:24:57,998 [] DEBUG http.wire - << "Content-Type: text/html[\r][\n]"
+2013-02-24 10:24:57,998 [] DEBUG http.wire - << "[\r][\n]"
+2013-02-24 10:24:57,999 [] DEBUG conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+2013-02-24 10:24:57,999 [] DEBUG http.headers - << HTTP/1.1 200 OK
+2013-02-24 10:24:57,999 [] DEBUG http.headers - << Date: Sun, 24 Feb 2013 02:23:35 GMT
+2013-02-24 10:24:57,999 [] DEBUG http.headers - << Server: Apache/2.0.63 (Win32) PHP/5.2.10
+2013-02-24 10:24:57,999 [] DEBUG http.headers - << X-Powered-By: PHP/5.2.10
+2013-02-24 10:24:57,999 [] DEBUG http.headers - << Set-Cookie: PHPSESSID=c41fkb1nprsv4kpqsi8g54ja74; path=/
+2013-02-24 10:24:57,999 [] DEBUG http.headers - << Content-Length: 6774
+2013-02-24 10:24:57,999 [] DEBUG http.headers - << Keep-Alive: timeout=15, max=100
+2013-02-24 10:24:57,999 [] DEBUG http.headers - << Connection: Keep-Alive
+2013-02-24 10:24:57,999 [] DEBUG http.headers - << Content-Type: text/html
+2013-02-24 10:24:58,011 [] DEBUG protocol.ResponseProcessCookies - Cookie accepted: "[version: 0][name: PHPSESSID][value: c41fkb1nprsv4kpqsi8g54ja74][domain: www.qc5qc.com][path: /][expiry: null]". 
+2013-02-24 10:24:58,013 [] DEBUG client.DefaultHttpClient - Connection can be kept alive for 15000 MILLISECONDS
+2013-02-24 10:24:58,016 [] DEBUG http.wire - << "[\r][\n]"
+2013-02-24 10:24:58,016 [] DEBUG http.wire - << "<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">[\r][\n]"
+2013-02-24 10:24:58,016 [] DEBUG http.wire - << "<html xmlns="http://www.w3.org/1999/xhtml">[\r][\n]"
+2013-02-24 10:24:58,016 [] DEBUG http.wire - << "<head>[\r][\n]"
+2013-02-24 10:24:58,016 [] DEBUG http.wire - << "<title>[0xbb][0xfa][0xb6][0xaf][0xb3][0xb5][0xbc][0xdd][0xca][0xbb][0xd4][0xb1][0xc4][0xa3][0xc4][0xe2][0xc5][0xe0][0xd1][0xb5][0xd4][0xda][0xcf][0xdf][0xd4][0xa4][0xd4][0xbc]</title>[\r][\n]"
+2013-02-24 10:24:58,016 [] DEBUG http.wire - << "<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />[\r][\n]"
+2013-02-24 10:24:58,016 [] DEBUG http.wire - << "<meta name="generator" content="DedeCMS V5.3" />[\r][\n]"
+2013-02-24 10:24:58,016 [] DEBUG http.wire - << "<meta name="author" content="desdev.cn" />[\r][\n]"
+2013-02-24 10:24:58,016 [] DEBUG http.wire - << "<link href="../js/dedecms.css" rel="stylesheet" media="screen" type="text/css" />[\r][\n]"
+2013-02-24 10:24:58,016 [] DEBUG http.wire - << "<link href="../js/table.css" rel="stylesheet" media="screen" type="text/css" />[\r][\n]"
+2013-02-24 10:24:58,016 [] DEBUG http.wire - << "</head>[\r][\n]"
+2013-02-24 10:24:58,016 [] DEBUG http.wire - << "<body class="buycarpage">[\r][\n]"
+2013-02-24 10:24:58,016 [] DEBUG http.wire - << "[\r][\n]"
+2013-02-24 10:24:58,017 [] DEBUG http.wire - << "<div class="header">[\r][\n]"
+2013-02-24 10:24:58,017 [] DEBUG http.wire - << "[0x9]<div class="top w960 center">[\r][\n]"
+2013-02-24 10:24:58,017 [] DEBUG http.wire - << "[0x9][0x9]<div class="title">[\r][\n]"
+2013-02-24 10:24:58,017 [] DEBUG http.wire - << "[0x9][0x9][0x9]<h1> <a href="http://www.qc5qc.com">[0xc4][0xa3][0xc4][0xe2][0xc5][0xe0][0xd1][0xb5][0xd4][0xda][0xcf][0xdf][0xd4][0xa4][0xd4][0xbc]</a> </h1>[\r][\n]"
+2013-02-24 10:24:58,017 [] DEBUG http.wire - << "[0x9][0x9]</div><!-- /title -->[\r][\n]"
+2013-02-24 10:24:58,017 [] DEBUG http.wire - << "[0x9][0x9][\r][\n]"
+2013-02-24 10:24:58,017 [] DEBUG http.wire - << "[0x9]</div><!-- /top -->[\r][\n]"
+2013-02-24 10:24:58,017 [] DEBUG http.wire - << "[0x9]<div class="nav mt1">[\r][\n]"
+2013-02-24 10:24:58,017 [] DEBUG http.wire - << "[0x9][0x9]<div class="w960 center">[\r][\n]"
+2013-02-24 10:24:58,017 [] DEBUG http.wire - << "[0x9][0x9][0x9]<ul>[\r][\n]"
+2013-02-24 10:24:58,017 [] DEBUG http.wire - << "[0x9][0x9][0x9]  <li class="r4"><a href="../index.php">[0xca][0xd7][0xd2][0xb3]</a></li>[\r][\n]"
+2013-02-24 10:24:58,017 [] DEBUG http.wire - << "              <li class="r1"><a href="mlpxyy.php"><strong>[0xc4][0xa3][0xc4][0xe2][0xc5][0xe0][0xd1][0xb5][0xd4][0xda][0xcf][0xdf][0xd4][0xa4][0xd4][0xbc]</strong></a></li>[\r][\n]"
+2013-02-24 10:24:58,017 [] DEBUG http.wire - << "              <li class="r2"><a href="mlpxqx.php"><strong>[0xd4][0xa4][0xd4][0xbc][0xc8][0xa1][0xcf][0xfb]</strong></a></li>[\r][\n]"
+2013-02-24 10:24:58,017 [] DEBUG http.wire - << "              <li class="r3"><a href="mlpxcx.php"><stron"
+2013-02-24 10:24:58,017 [] DEBUG http.wire - << "g>[0xd4][0xa4][0xd4][0xbc][0xb2][0xe9][0xd1][0xaf]</strong></a></li>[\r][\n]"
+2013-02-24 10:24:58,017 [] DEBUG http.wire - << "[0x9][0x9][0x9]</ul>[\r][\n]"
+2013-02-24 10:24:58,017 [] DEBUG http.wire - << "[0x9][0x9]</div>[\r][\n]"
+2013-02-24 10:24:58,018 [] DEBUG http.wire - << "[0x9]</div><!-- /nav -->[\r][\n]"
+2013-02-24 10:24:58,018 [] DEBUG http.wire - << "</div><!-- /header -->[\r][\n]"
+2013-02-24 10:24:58,018 [] DEBUG http.wire - << "[\r][\n]"
+2013-02-24 10:24:58,018 [] DEBUG http.wire - << "<script language="javascript" src="../js/class.js"></script>[\r][\n]"
+2013-02-24 10:24:58,018 [] DEBUG http.wire - << "<script language="javascript" src="../js/class_x.js"></script>[\r][\n]"
+2013-02-24 10:24:58,018 [] DEBUG http.wire - << "[\r][\n]"
+2013-02-24 10:24:58,018 [] DEBUG http.wire - << "[\r][\n]"
+2013-02-24 10:24:58,018 [] DEBUG http.wire - << "<SCRIPT language=javascript>[\r][\n]"
+2013-02-24 10:24:58,018 [] DEBUG http.wire - << "[\r][\n]"
+2013-02-24 10:24:58,018 [] DEBUG http.wire - << "function validate(){[\r][\n]"
+2013-02-24 10:24:58,018 [] DEBUG http.wire - << "[0x9]var userSsn = document.getElementById("userSsn").value;[\r][\n]"
+2013-02-24 10:24:58,018 [] DEBUG http.wire - << "[0x9]if( userSsn == "" || userSsn == null ){[\r][\n]"
+2013-02-24 10:24:58,018 [] DEBUG http.wire - << "[0x9][0x9][0x9]alert('[0xc7][0xeb][0xca][0xe4][0xc8][0xeb][0xd1][0xa7][0xd4][0xb1][0xc9][0xed][0xb7][0xdd][0xd6][0xa4][0xba][0xc5]');[\r][\n]"
+2013-02-24 10:24:58,018 [] DEBUG http.wire - << "[0x9][0x9][0x9]return false[0x9][0x9][\r][\n]"
+2013-02-24 10:24:58,018 [] DEBUG http.wire - << "[0x9]}[\r][\n]"
+2013-02-24 10:24:58,018 [] DEBUG http.wire - << "[0x9]var province = document.getElementById("province").value;[\r][\n]"
+2013-02-24 10:24:58,018 [] DEBUG http.wire - << "[0x9]var city = document.getElementById("city").value;[\r][\n]"
+2013-02-24 10:24:58,018 [] DEBUG http.wire - << "[0x9]if( city == "" || city == null || city == "000000"){[\r][\n]"
+2013-02-24 10:24:58,018 [] DEBUG http.wire - << "[0x9][0x9][0x9]alert('[0xc7][0xeb][0xd1][0xa1][0xd4][0xf1][0xd1][0xa7][0xb3][0xb5][0xb1][0xa8][0xc3][0xfb][0xbc][0xdd][0xd0][0xa3]');[\r][\n]"
+2013-02-24 10:24:58,018 [] DEBUG http.wire - << "[0x9][0x9][0x9]return false[0x9][0x9][\r][\n]"
+2013-02-24 10:24:58,018 [] DEBUG http.wire - << "[0x9]}[\r][\n]"
+2013-02-24 10:24:58,018 [] DEBUG http.wire - << "[0x9]if(city == province){[\r][\n]"
+2013-02-24 10:24:58,018 [] DEBUG http.wire - << "[0x9]        alert('[0xc7][0xeb][0xd1][0xa1][0xd4][0xf1][0xd1][0xa7][0xb3][0xb5][0xb1][0xa8][0xc3][0xfb][0xbc][0xdd][0xd0][0xa3]');[\r][\n]"
+2013-02-24 10:24:58,018 [] DEBUG http.wire - << "[0x9][0x9][0x9]return false[0x9][\r][\n]"
+2013-02-24 10:24:58,019 [] DEBUG http.wire - << "[0x9]}[\r][\n]"
+2013-02-24 10:24:58,019 [] DEBUG http.wire - << "[0x9]return true;[\r][\n]"
+2013-02-24 10:24:58,019 [] DEBUG http.wire - << "}[\r][\n]"
+2013-02-24 10:24:58,019 [] DEBUG http.wire - << "</script>[\r][\n]"
+2013-02-24 10:24:58,019 [] DEBUG http.wire - << "[\r][\n]"
+2013-02-24 10:24:58,019 [] DEBUG http.wire - << "<script language="JavaScript" type="text/javascript"> [\r][\n]"
+2013-02-24 10:24:58,019 [] DEBUG http.wire - << "[0x9]if(self!=top)     //Iframe[0xbf][0xf2][0xbc][0xdc] [\r][\n]"
+2013-02-24 10:24:58,019 [] DEBUG http.wire - << "[0x9]{ [\r][\n]"
+2013-02-24 10:24:58,019 [] DEBUG http.wire - << "[0x9][0x9]document.location.href="../err.html";[\r][\n]"
+2013-02-24 10:24:58,019 [] DEBUG http.wire - << "[0x9]} [\r][\n]"
+2013-02-24 10:24:58,019 [] DEBUG http.wire - << "[\r][\n]"
+2013-02-24 10:24:58,019 [] DEBUG http.wire - << "</script>[\r][\n]"
+2013-02-24 10:24:58,019 [] DEBUG http.wire - << "[\r][\n]"
+2013-02-24 10:24:58,019 [] DEBUG http.wire - << "<div class="w960 clear center mt1 cmt-box">[\r][\n]"
+2013-02-24 10:24:58,019 [] DEBUG http.wire - << "[0x9]<div class="sp-title"><h2>[0xc4][0xa3][0xc4][0xe2][0xc5][0xe0][0xd1][0xb5][0xd4][0xda][0xcf][0xdf][0xd4][0xa4][0xd4][0xbc]</h2></div>[\r][\n]"
+2013-02-24 10:24:58,019 [] DEBUG http.wire - << "[0x9]<div class="buycar">[\r][\n]"
+2013-02-24 10:24:58,019 [] DEBUG http.wire - << "[0x9][0x9]<FORM name=uform onSubmit="return validate();" [\r][\n]"
+2013-02-24 10:24:58,019 [] DEBUG http.wire - << "action="mCheck.php" method=post target='_self'>[\r][\n]"
+2013-02-24 10:24:58,019 [] DEBUG http.wire - << "        <table cellpadding="0" cellspacing="0" class="flow">[\r][\n]"
+2013-02-24 10:24:58,019 [] DEBUG http.wire - << "[0x9][0x9][0x9]<tr>[\r][\n]"
+2013-02-24 10:24:58,019 [] DEBUG http.wire - << "[0x9][0x9][0x9][0x9]<td class="thisclass">[0xca][0xe4][0xc8][0xeb][0xd1][0xa7][0xd4][0xb1][0xd0][0xc5][0xcf][0xa2]</td>[\r][\n]"
+2013-02-24 10:24:58,019 [] DEBUG http.wire - << "[0x9][0x9][0x9][0x9]<td>[0xd1][0xa1][0xd4][0xf1][0xc5][0xe0][0xd1][0xb5][0xb5][0xe3]</td>[\r][\n]"
+2013-02-24 10:24:58,019 [] DEBUG http.wire - << "[0x9][0x9][0x9][0x9]<td>[0xd1][0xa1][0xd4][0xf1][0xd4][0xa4][0xd4][0xbc][0xc5][0xe0][0xd1][0xb5][0xca][0xb1][0xbc][0xe4][0xb6][0xce]</td>[\r][\n]"
+2013-02-24 10:24:58,019 [] DEBUG http.wire - << "[0x9][0x9][0x9][0x9]<td>[0xd4][0xa4][0xd4][0xbc][0xbd][0xe1][0xb9][0xfb]</td>[\r][\n]"
+2013-02-24 10:24:58,020 [] DEBUG http.wire - << "[0x9][0x9][0x9]</tr>[\r][\n]"
+2013-02-24 10:24:58,020 [] DEBUG http.wire - << "[0x9][0x9]</table>[\r][\n]"
+2013-02-24 10:24:58,020 [] DEBUG http.wire - << "[0x9][0x9]<table width="100%" border="0" cellpadding="0" cellspacing="0" class="dede_table">[\r][\n]"
+2013-02-24 10:24:58,020 [] DEBUG http.wire - << "[0x9][0x9][0x9]<thead>[\r][\n]"
+2013-02-24 10:24:58,020 [] DEBUG http.wire - << "[0x9][0x9][0x9][0x9]<tr>[\r][\n]"
+2013-02-24 10:24:58,020 [] DEBUG http.wire - << "[0x9][0x9][0x9][0x9][0x9]<td colspan="6">[0xa1][0xf3][0xc7][0xeb][0xca][0xe4][0xc8][0xeb][0xd1][0xa7][0xd4][0xb1][0xc9][0xed][0xb7][0xdd][0xd6][0xa4][0xba][0xc5][0xba][0xcd][0xd1][0xa7][0xb3][0xb5][0xb1][0xa8][0xc3][0xfb][0xbc][0xdd][0xd0][0xa3]</td>[\r][\n]"
+2013-02-24 10:24:58,020 [] DEBUG http.wire - << "[0x9][0x9][0x9][0x9]</tr>[\r][\n]"
+2013-02-24 10:24:58,020 [] DEBUG http.wire - << "[0x9][0x9][0x9]</thead>            [\r][\n]"
+2013-02-24 10:24:58,020 [] DEBUG http.wire - << "[0x9][0x9][0x9]<tbody>[\r][\n]"
+2013-02-24 10:24:58,020 [] DEBUG http.wire - << "[0x9][0x9][0x9][0x9]<tr>[\r][\n]"
+2013-02-24 10:24:58,020 [] DEBUG http.wire - << "[0x9][0x9][0x9][0x9][0x9]<td width="257" class="td1">[0xd1][0xa7][0xd4][0xb1][0xc9][0xed][0xb7][0xdd][0xd6][0xa4][0xa3][0xba]</td>[\r][\n]"
+2013-02-24 10:24:58,020 [] DEBUG http.wire - << "[0x9][0x9][0x9][0x9][0x9]<td width="687"><input name="userSsn" type="text" class="ipt-txt" id="userSsn" size="25" maxlength="18" />[\r][\n]"
+2013-02-24 10:24:58,020 [] DEBUG http.wire - << "[0x9][0x9][0x9][0x9][0x9]  <span class="hongzi">*</span></td>[\r][\n]"
+2013-02-24 10:24:58,020 [] DEBUG http.wire - << "[0x9][0x9][0x9][0x9]</tr>[\r][\n]"
+2013-02-24 10:24:58,020 [] DEBUG http.wire - << "[0x9][0x9][0x9][0x9]<tr>[\r][\n]"
+2013-02-24 10:24:58,020 [] DEBUG http.wire - << "[0x9][0x9][0x9][0x9][0x9]<td width="257" class="td1">[0xd1][0xa1][0xd4][0xf1][0xd1][0xa7][0xb3][0xb5][0xb1][0xa8][0xc3][0xfb][0xbc][0xdd][0xd0][0xa3][0xa3][0xba]</td>[\r][\n]"
+2013-02-24 10:24:58,020 [] DEBUG http.wire - << "[0x9][0x9][0x9][0x9][0x9]<td><select id="province" size="1" name="province">[\r][\n]"
+2013-02-24 10:24:58,020 [] DEBUG http.wire - << "                <option selected="selected"></option>[\r][\n]"
+2013-02-24 10:24:58,020 [] DEBUG http.wire - << "              </select>[\r][\n]"
+2013-02-24 10:24:58,020 [] DEBUG http.wire - << "              <select id="city" size="1" name="city">[\r][\n]"
+2013-02-24 10:24:58,020 [] DEBUG http.wire - << "                <option selected="selected"></option>[\r][\n]"
+2013-02-24 10:24:58,020 [] DEBUG http.wire - << "              </select>[\r][\n]"
+2013-02-24 10:24:58,021 [] DEBUG http.wire - << "              <script language="JavaScript" type="text/javascript">[\r][\n]"
+2013-02-24 10:24:58,021 [] DEBUG http.wire - << "InitCitySelect(document.uform.province,document.uform.city);[\r][\n]"
+2013-02-24 10:24:58,021 [] DEBUG http.wire - << "        </script>[\r][\n]"
+2013-02-24 10:24:58,021 [] DEBUG http.wire - << "              <span class="hongzi">*</span></td>[\r][\n]"
+2013-02-24 10:24:58,021 [] DEBUG http.wire - << "[0x9][0x9][0x9][0x9]</tr> [\r][\n]"
+2013-02-24 10:24:58,021 [] DEBUG http.wire - << "                [\r][\n]"
+2013-02-24 10:24:58,021 [] DEBUG http.wire - << "                <tr>[\r][\n]"
+2013-02-24 10:24:58,021 [] DEBUG http.wire - << "                    <td width="257" class="td1"><font color="#FF0000">[0xd7][0xa2][0xd2][0xe2][0xa3][0xba]</font></td>[\r][\n]"
+2013-02-24 10:24:58,021 [] DEBUG http.wire - << "                    <td style='font-size:18px;'><font color="#FF0000">[0xd1][0xa7][0xd4][0xb1][0xb2][0xbb][0xc4][0xdc][0xbf][0xe7][0xb5][0xd8][0xc7][0xf8][0xd4][0xa4][0xd4][0xbc]([0xbc][0xb4][0xba][0xbc][0xd6][0xdd][0xb5][0xc4][0xd1][0xa7][0xd4][0xb1][0xb2][0xbb][0xc4][0xdc][0xd4][0xa4][0xd4][0xbc][0xd6][0xc1][0xb8][0xbb][0xd1][0xf4],[0xb8][0xbb][0xd1][0xf4][0xb5][0xc4][0xd1][0xa7][0xd4][0xb1][0xb2][0xbb][0xc4][0xdc][0xd4][0xa4][0xd4][0xbc][0xd6][0xc1][0xba][0xbc][0xd6][0xdd]),[0xb7][0xf1][0xd4][0xf2][0xbd][0xab][0xd7][0xf7][0xce][0xde][0xd0][0xa7][0xb4][0xa6][0xc0][0xed]...</font></td>[\r][\n]"
+2013-02-24 10:24:58,021 [] DEBUG http.wire - << "                </tr>[\r][\n]"
+2013-02-24 10:24:58,021 [] DEBUG http.wire - << "                [\r][\n]"
+2013-02-24 10:24:58,021 [] DEBUG http.wire - << "[0x9][0x9][0x9][0x9]<tr>[\r][\n]"
+2013-02-24 10:24:58,021 [] DEBUG http.wire - << "[0x9][0x9][0x9][0x9][0x9]<td width="257" class="td1"><font color="#FF0000"></font></td>[\r][\n]"
+2013-02-24 10:24:58,021 [] DEBUG http.wire - << "[0x9][0x9][0x9][0x9][0x9]<td><font color="#FF0000">1[0xa1][0xa2][0xd4][0xa4][0xd4][0xbc][0xb5][0xc4][0xd1][0xa7][0xd4][0xb1][0xb1][0xd8][0xd0][0xeb][0xcd][0xea][0xb3][0xc9][0xbb][0xfa][0xb6][0xaf][0xb3][0xb5][0xbc][0xdd][0xca][0xbb][0xd4][0xb1][0xc0][0xed][0xc2][0xdb][0xc5][0xe0][0xd1][0xb5][0xa3][0xbb][0xb1][0xd8][0xd0][0xeb][0xb2][0xce][0xbc][0xd3][0xc0][0xed][0xc2][0xdb][0xbd][0xe1][0xd2][0xb5][0xbc][0xf8][0xb6][0xa8],[0xb2][0xa2][0xbc][0xf8][0xb6][0xa8][0xb3][0xc9][0xbc][0xa8][0xba][0xcf][0xb8][0xf1][0xba][0xf3][0xb7][0xbd][0xbf][0xc9][0xd4][0xa4][0xd4][0xbc][0xa1][0xa3]</font></td>[\r][\n]"
+2013-02-24 10:24:58,021 [] DEBUG http.wire - << "[0x9][0x9][0x9][0x9]</tr>[\r][\n]"
+2013-02-24 10:24:58,021 [] DEBUG http.wire - << "[0x9][0x9][0x9][0x9]<tr>[\r][\n]"
+2013-02-24 10:24:58,021 [] DEBUG http.wire - << "[0x9][0x9][0x9][0x9][0x9]<td width="257" class="td1"></td>[\r][\n]"
+2013-02-24 10:24:58,022 [] DEBUG http.wire - << "[0x9][0x9][0x9][0x9][0x9]<td><font color="#FF0000">2[0xa1][0xa2][0xd1][0xa7][0xd4][0xb1][0xc8][0xa1][0xcf][0xfb][0xd4][0xa4][0xd4][0xbc][0xca][0xb1],[0xd6][0xbb][0xc4][0xdc][0xc8][0xa1][0xcf][0xfb][0xb5][0xb1][0xcc][0xec][0xb5][0xc7][0xbc][0xc7][0xb5][0xc4][0xce][0xb4][0xc5][0xe0][0xd1][0xb5][0xd4][0xa4][0xd4][0xbc][0xbc][0xc7][0xc2][0xbc][0xa1][0xa3]</font></td>[\r][\n]"
+2013-02-24 10:24:58,022 [] DEBUG http.wire - << "[0x9][0x9][0x9][0x9]</tr>[\r][\n]"
+2013-02-24 10:24:58,022 [] DEBUG http.wire - << "[0x9][0x9][0x9][0x9]<tr>[\r][\n]"
+2013-02-24 10:24:58,022 [] DEBUG http.wire - << "[0x9][0x9][0x9][0x9]  <td class="td1"></td>[\r][\n]"
+2013-02-24 10:24:58,022 [] DEBUG http.wire - << "[0x9][0x9][0x9][0x9]  <td><font color="#FF0000">3[0xa1][0xa2][0xd1][0xa7][0xd4][0xb1][0xd4][0xa4][0xd4][0xbc][0xcb][0xf9][0xcc][0xee][0xd0][0xc5][0xcf][0xa2][0xb1][0xd8][0xd0][0xeb][0xd5][0xe6][0xca][0xb5][0xd7][0xbc][0xc8][0xb7][0xa3][0xac][0xc8][0xe7][0xc5][0xaa][0xd0][0xe9][0xd7][0xf6][0xbc][0xd9][0xa3][0xac][0xd0][0xe9][0xcc][0xee][0xc2][0xd2][0xb1][0xa8][0xa3][0xac][0xcb][0xf9][0xb2][0xfa][0xc9][0xfa][0xb5][0xc4][0xd2][0xbb][0xc7][0xd0][0xba][0xf3][0xb9][0xfb][0xd1][0xa7][0xd4][0xb1][0xd7][0xd4][0xd0][0xd0][0xb8][0xba][0xd4][0xf0][0xa1][0xa3]</font></td>[\r][\n]"
+2013-02-24 10:24:58,022 [] DEBUG http.wire - << "[0x9][0x9][0x9]  </tr>[\r][\n]"
+2013-02-24 10:24:58,022 [] DEBUG http.wire - << "[0x9][0x9][0x9]  <tr>[\r][\n]"
+2013-02-24 10:24:58,022 [] DEBUG http.wire - << "[0x9][0x9][0x9][0x9]  <td class="td1"></td>[\r][\n]"
+2013-02-24 10:24:58,022 [] DEBUG http.wire - << "[0x9][0x9][0x9][0x9]  <td><font color="#FF0000">4[0xa1][0xa2][0xcd][0xf8][0xc9][0xcf][0xd4][0xa4][0xd4][0xbc][0xd6][0xbb][0xcf][0xde][0xd1][0xa7][0xb3][0xb5][0xb1][0xa8][0xc3][0xfb][0xbc][0xdd][0xd0][0xa3][0xd4][0xda][0xba][0xbc][0xd6][0xdd][0xca][0xd0][0xc7][0xf8]([0xb2][0xbb][0xb0][0xfc][0xc0][0xa8][0xcf][0xf4][0xc9][0xbd][0xa1][0xa2][0xd3][0xe0][0xba][0xbc])[0xba][0xcd][0xb8][0xbb][0xd1][0xf4][0xb5][0xc4][0xd1][0xa7][0xd4][0xb1][0xa1][0xa3]</font></td>[\r][\n]"
+2013-02-24 10:24:58,022 [] DEBUG http.wire - << "[0x9][0x9][0x9]  </tr> [\r][\n]"
+2013-02-24 10:24:58,022 [] DEBUG http.wire - << "              [\r][\n]"
+2013-02-24 10:24:58,022 [] DEBUG http.wire - << "[0x9][0x9][0x9][0x9]<tr>[\r][\n]"
+2013-02-24 10:24:58,022 [] DEBUG http.wire - << "[0x9][0x9][0x9][0x9]  <td class="td1"></td>[\r][\n]"
+2013-02-24 10:24:58,022 [] DEBUG http.wire - << "[0x9][0x9][0x9][0x9]  <td><font color="#FF0000">5[0xa1][0xa2][0xd1][0xa7][0xd4][0xb1][0xd2][0xf2][0xb9][0xca][0xc8][0xa1][0xcf][0xfb][0xbb][0xf2][0xb8][0xfc][0xb8][0xc4][0xd4][0xa4][0xd4][0xbc][0xb1][0xd8][0xd0][0xeb][0xcc][0xe1][0xc7][0xb0]24[0xd0][0xa1][0xca][0xb1][0xba][0xcd][0xcb][0xf9][0xd4][0xda][0xbc][0xdd][0xd0][0xa3][0xc1][0xaa][0xcf][0xb5]</font></td>[\r][\n]"
+2013-02-24 10:24:58,022 [] DEBUG http.wire - << "[0x9][0x9][0x9]  </tr>[\r][\n]"
+2013-02-24 10:24:58,022 [] DEBUG http.wire - << "[0x9][0x9][0x9][0x9]<tr>[\r][\n]"
+2013-02-24 10:24:58,022 [] DEBUG http.wire - << "[0x9][0x9][0x9][0x9][0x9]<td width="257" class="td1"></td>[\r][\n]"
+2013-02-24 10:24:58,023 [] DEBUG http.wire - << "[0x9][0x9][0x9][0x9][0x9]<td><font color="#FF0000">[0xc8][0xe7][0xd3][0xd0][0xd2][0xc9][0xce][0xca][0xc1][0xaa][0xcf][0xb5][0xbc][0xdd][0xca][0xbb][0xd4][0xb1][0xc4][0xa3][0xc4][0xe2][0xc5][0xe0][0xd1][0xb5][0xd4][0xa4][0xd4][0xbc][0xd6][0xd0][0xd0][0xc4] </font></td>[\r][\n]"
+2013-02-24 10:24:58,023 [] DEBUG http.wire - << "[0x9][0x9][0x9][0x9]</tr>[\r][\n]"
+2013-02-24 10:24:58,023 [] DEBUG http.wire - << "[0x9][0x9][0x9][0x9]<tr>[\r][\n]"
+2013-02-24 10:24:58,023 [] DEBUG http.wire - << "[0x9][0x9][0x9][0x9][0x9]<td width="257" class="td1"></td>[\r][\n]"
+2013-02-24 10:24:58,023 [] DEBUG http.wire - << "[0x9][0x9][0x9][0x9][0x9]<td><button type="submit" class="btn-2">[0xcf][0xc2][0xd2][0xbb][0xb2][0xbd]</button>[\r][\n]"
+2013-02-24 10:24:58,023 [] DEBUG http.wire - << "[0x9][0x9][0x9][0x9]    <input type="hidden" name="token" id="token" value="c5ec3c7fafed4818667f6e8d6a81cdfe" /></td>[\r][\n]"
+2013-02-24 10:24:58,023 [] DEBUG http.wire - << "[0x9][0x9][0x9][0x9]</tr>[\r][\n]"
+2013-02-24 10:24:58,023 [] DEBUG http.wire - << "[0x9][0x9][0x9]</tbody>[\r][\n]"
+2013-02-24 10:24:58,023 [] DEBUG http.wire - << "[0x9][0x9]</table>[\r][\n]"
+2013-02-24 10:24:58,023 [] DEBUG http.wire - << "[\r][\n]"
+2013-02-24 10:24:58,023 [] DEBUG http.wire - << "[0x9][0x9]</form>[\r][\n]"
+2013-02-24 10:24:58,023 [] DEBUG http.wire - << "[0x9]</div>[\r][\n]"
+2013-02-24 10:24:58,023 [] DEBUG http.wire - << "[0x9][\r][\n]"
+2013-02-24 10:24:58,023 [] DEBUG http.wire - << "</div>[\r][\n]"
+2013-02-24 10:24:58,023 [] DEBUG http.wire - << "[\r][\n]"
+2013-02-24 10:24:58,023 [] DEBUG http.wire - << "<script language="JavaScript" type="text/javascript">[\r][\n]"
+2013-02-24 10:24:58,023 [] DEBUG http.wire - << "function Dodelivery(_id){[\r][\n]"
+2013-02-24 10:24:58,023 [] DEBUG http.wire - << "[0x9]var _price = document.getElementById("delivery_price_"+_id).innerHTML;[\r][\n]"
+2013-02-24 10:24:58,023 [] DEBUG http.wire - << "[0x9]var _priceCount = parseFloat(0.00)+parseFloat(_price);[\r][\n]"
+2013-02-24 10:24:58,023 [] DEBUG http.wire - << "[0x9]document.getElementById("priceCount").innerHTML = number_format(_priceCount,2);[\r][\n]"
+2013-02-24 10:24:58,023 [] DEBUG http.wire - << "[0x9]_priceCount = null;[\r][\n]"
+2013-02-24 10:24:58,023 [] DEBUG http.wire - << "}[\r][\n]"
+2013-02-24 10:24:58,023 [] DEBUG http.wire - << "function number_format(number)   {[\r][\n]"
+2013-02-24 10:24:58,024 [] DEBUG http.wire - << "[0x9]if(number<0){[\r][\n]"
+2013-02-24 10:24:58,024 [] DEBUG http.wire - << "[0x9][0x9]return '-'+outputDollars(Math.floor(Math.abs(number)-0)+'')+outputCents(Math.abs(number)-0);[\r][\n]"
+2013-02-24 10:24:58,024 [] DEBUG http.wire - << "[0x9]}else{[\r][\n]"
+2013-02-24 10:24:58,024 [] DEBUG http.wire - << "[0x9][0x9]return outputDollars(Math.floor(number-0)+'')   +   outputCents(number-0);[\r][\n]"
+2013-02-24 10:24:58,024 [] DEBUG http.wire - << "[0x9]}[\r][\n]"
+2013-02-24 10:24:58,024 [] DEBUG http.wire - << "}[\r][\n]"
+2013-02-24 10:24:58,024 [] DEBUG http.wire - << "function outputDollars(number)   {[\r][\n]"
+2013-02-24 10:24:58,024 [] DEBUG http.wire - << "[0x9]if(number.length <= 3){[\r][\n]"
+2013-02-24 10:24:58,024 [] DEBUG http.wire - << "[0x9][0x9]return (number == '' ? '0' : number);[\r][\n]"
+2013-02-24 10:24:58,024 [] DEBUG http.wire - << "[0x9]}else{[\r][\n]"
+2013-02-24 10:24:58,024 [] DEBUG http.wire - << "[0x9][0x9]var mod = number.length%3;[\r][\n]"
+2013-02-24 10:24:58,024 [] DEBUG http.wire - << "[0x9][0x9]var output = (mod == 0 ? '' : (number.substring(0,mod)));[\r][\n]"
+2013-02-24 10:24:58,024 [] DEBUG http.wire - << "[0x9][0x9]for(i=0   ;   i<   Math.floor(number.length/3)   ;   i++)   {[\r][\n]"
+2013-02-24 10:24:58,024 [] DEBUG http.wire - << "[0x9][0x9][0x9]if((mod == 0) && (i == 0))[\r][\n]"
+2013-02-24 10:24:58,024 [] DEBUG http.wire - << "[0x9][0x9][0x9]output+= number.substring(mod+3*i,mod+3*i+3);[\r][\n]"
+2013-02-24 10:24:58,024 [] DEBUG http.wire - << "[0x9][0x9][0x9]else[\r][\n]"
+2013-02-24 10:24:58,024 [] DEBUG http.wire - << "[0x9][0x9][0x9]output+= ',' + number.substring(mod+3*i,mod+3*i+3);[\r][\n]"
+2013-02-24 10:24:58,024 [] DEBUG http.wire - << "[0x9][0x9]}[\r][\n]"
+2013-02-24 10:24:58,024 [] DEBUG http.wire - << "[0x9][0x9]return (output);[\r][\n]"
+2013-02-24 10:24:58,024 [] DEBUG http.wire - << "[0x9]}[\r][\n]"
+2013-02-24 10:24:58,024 [] DEBUG http.wire - << "}[\r][\n]"
+2013-02-24 10:24:58,024 [] DEBUG http.wire - << "function outputCents(amount){[\r][\n]"
+2013-02-24 10:24:58,024 [] DEBUG http.wire - << "[0x9]amount = Math.round(((amount)-Math.floor(amount))*100);[\r][\n]"
+2013-02-24 10:24:58,025 [] DEBUG http.wire - << "[0x9]return (amount<10 ? '.0' + amount : '.' + amount);[\r][\n]"
+2013-02-24 10:24:58,025 [] DEBUG http.wire - << "}[\r][\n]"
+2013-02-24 10:24:58,025 [] DEBUG http.wire - << "function vdimgck()[\r][\n]"
+2013-02-24 10:24:58,025 [] DEBUG http.wire - << "{[\r][\n]"
+2013-02-24 10:24:58,025 [] DEBUG http.wire - << "[0x9]document.getElementById("vdimgck_img").src = '../include/vdimgck.php?'+Math.random();[\r][\n]"
+2013-02-24 10:24:58,025 [] DEBUG http.wire - << "}[\r][\n]"
+2013-02-24 10:24:58,025 [] DEBUG http.wire - << "</script>[\r][\n]"
+2013-02-24 10:24:58,025 [] DEBUG http.wire - << "[\r][\n]"
+2013-02-24 10:24:58,025 [] DEBUG http.wire - << "<br>[\r][\n]"
+2013-02-24 10:24:58,025 [] DEBUG http.wire - << "<div class="footer">[\r][\n]"
+2013-02-24 10:24:58,025 [] DEBUG http.wire - << "[\r][\n]"
+2013-02-24 10:24:58,025 [] DEBUG http.wire - << "[\r][\n]"
+2013-02-24 10:24:58,025 [] DEBUG http.wire - << "<p>[0xba][0xbc][0xd6][0xdd][0xc8][0xba][0xba][0xcd][0xc6][0xfb][0xb3][0xb5][0xbc][0xdd][0xca][0xbb][0xc4][0xa3][0xc4][0xe2][0xc5][0xe0][0xd1][0xb5][0xb7][0xfe][0xce][0xf1][0xd6][0xd0][0xd0][0xc4]</p>[\r][\n]"
+2013-02-24 10:24:58,025 [] DEBUG http.wire - << "<br>[\r][\n]"
+2013-02-24 10:24:58,025 [] DEBUG http.wire - << "<p>[0xba][0xbc][0xd6][0xdd][0xba][0xe3][0xd3][0xaf][0xb5][0xe7][0xd7][0xd3][0xbf][0xc6][0xbc][0xbc][0xd3][0xd0][0xcf][0xde][0xb9][0xab][0xcb][0xbe]</p>[\r][\n]"
+2013-02-24 10:24:58,025 [] DEBUG http.wire - << "[\r][\n]"
+2013-02-24 10:24:58,025 [] DEBUG http.wire - << "</div>[\r][\n]"
+2013-02-24 10:24:58,025 [] DEBUG http.wire - << "<!-- /footer -->[\r][\n]"
+2013-02-24 10:24:58,025 [] DEBUG http.wire - << "<script src="http://s108.cnzz.com/stat.php?id=1382947&web_id=1382947&online=1&show=line" language="JavaScript" charset="gb2312"></script>[\r][\n]"
+2013-02-24 10:24:58,025 [] DEBUG http.wire - << "[\r][\n]"
+2013-02-24 10:24:58,025 [] DEBUG http.wire - << "[\r][\n]"
+2013-02-24 10:24:58,025 [] DEBUG http.wire - << "</body>[\r][\n]"
+2013-02-24 10:24:58,025 [] DEBUG http.wire - << "</html>[\r][\n]"
+2013-02-24 10:24:58,025 [] DEBUG http.wire - << "[\r][\n]"
+2013-02-24 10:24:58,025 [] DEBUG http.wire - << "[\r][\n]"
+2013-02-24 10:24:58,026 [] DEBUG tsccm.ThreadSafeClientConnManager - Released connection is reusable.
+2013-02-24 10:24:58,027 [] DEBUG tsccm.ConnPoolByRoute - Releasing connection [HttpRoute[{}->http://www.qc5qc.com:80]][null]
+2013-02-24 10:24:58,027 [] DEBUG tsccm.ConnPoolByRoute - Pooling connection [HttpRoute[{}->http://www.qc5qc.com:80]][null]; keep alive for 15000 MILLISECONDS
+2013-02-24 10:24:58,027 [] DEBUG tsccm.ConnPoolByRoute - Notifying no-one, there are no waiting threads
+2013-02-24 10:24:58,027 [] DEBUG sesamegu.AccessReserverGetPage - 首页文本：
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>机动车驾驶员模拟培训在线预约</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta name="generator" content="DedeCMS V5.3" />
+<meta name="author" content="desdev.cn" />
+<link href="../js/dedecms.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="../js/table.css" rel="stylesheet" media="screen" type="text/css" />
+</head>
+<body class="buycarpage">
+
+<div class="header">
+	<div class="top w960 center">
+		<div class="title">
+			<h1> <a href="http://www.qc5qc.com">模拟培训在线预约</a> </h1>
+		</div><!-- /title -->
+		
+	</div><!-- /top -->
+	<div class="nav mt1">
+		<div class="w960 center">
+			<ul>
+			  <li class="r4"><a href="../index.php">首页</a></li>
+              <li class="r1"><a href="mlpxyy.php"><strong>模拟培训在线预约</strong></a></li>
+              <li class="r2"><a href="mlpxqx.php"><strong>预约取消</strong></a></li>
+              <li class="r3"><a href="mlpxcx.php"><strong>预约查询</strong></a></li>
+			</ul>
+		</div>
+	</div><!-- /nav -->
+</div><!-- /header -->
+
+<script language="javascript" src="../js/class.js"></script>
+<script language="javascript" src="../js/class_x.js"></script>
+
+
+<SCRIPT language=javascript>
+
+function validate(){
+	var userSsn = document.getElementById("userSsn").value;
+	if( userSsn == "" || userSsn == null ){
+			alert('请输入学员身份证号');
+			return false		
+	}
+	var province = document.getElementById("province").value;
+	var city = document.getElementById("city").value;
+	if( city == "" || city == null || city == "000000"){
+			alert('请选择学车报名驾校');
+			return false		
+	}
+	if(city == province){
+	        alert('请选择学车报名驾校');
+			return false	
+	}
+	return true;
+}
+</script>
+
+<script language="JavaScript" type="text/javascript"> 
+	if(self!=top)     //Iframe框架 
+	{ 
+		document.location.href="../err.html";
+	} 
+
+</script>
+
+<div class="w960 clear center mt1 cmt-box">
+	<div class="sp-title"><h2>模拟培训在线预约</h2></div>
+	<div class="buycar">
+		<FORM name=uform onSubmit="return validate();" 
+action="mCheck.php" method=post target='_self'>
+        <table cellpadding="0" cellspacing="0" class="flow">
+			<tr>
+				<td class="thisclass">输入学员信息</td>
+				<td>选择培训点</td>
+				<td>选择预约培训时间段</td>
+				<td>预约结果</td>
+			</tr>
+		</table>
+		<table width="100%" border="0" cellpadding="0" cellspacing="0" class="dede_table">
+			<thead>
+				<tr>
+					<td colspan="6">◇请输入学员身份证号和学车报名驾校</td>
+				</tr>
+			</thead>            
+			<tbody>
+				<tr>
+					<td width="257" class="td1">学员身份证：</td>
+					<td width="687"><input name="userSsn" type="text" class="ipt-txt" id="userSsn" size="25" maxlength="18" />
+					  <span class="hongzi">*</span></td>
+				</tr>
+				<tr>
+					<td width="257" class="td1">选择学车报名驾校：</td>
+					<td><select id="province" size="1" name="province">
+                <option selected="selected"></option>
+              </select>
+              <select id="city" size="1" name="city">
+                <option selected="selected"></option>
+              </select>
+              <script language="JavaScript" type="text/javascript">
+InitCitySelect(document.uform.province,document.uform.city);
+        </script>
+              <span class="hongzi">*</span></td>
+				</tr> 
+                
+                <tr>
+                    <td width="257" class="td1"><font color="#FF0000">注意：</font></td>
+                    <td style='font-size:18px;'><font color="#FF0000">学员不能跨地区预约(即杭州的学员不能预约至富阳,富阳的学员不能预约至杭州),否则将作无效处理...</font></td>
+                </tr>
+                
+				<tr>
+					<td width="257" class="td1"><font color="#FF0000"></font></td>
+					<td><font color="#FF0000">1、预约的学员必须完成机动车驾驶员理论培训；必须参加理论结业鉴定,并鉴定成绩合格后方可预约。</font></td>
+				</tr>
+				<tr>
+					<td width="257" class="td1"></td>
+					<td><font color="#FF0000">2、学员取消预约时,只能取消当天登记的未培训预约记录。</font></td>
+				</tr>
+				<tr>
+				  <td class="td1"></td>
+				  <td><font color="#FF0000">3、学员预约所填信息必须真实准确，如弄虚做假，虚填乱报，所产生的一切后果学员自行负责。</font></td>
+			  </tr>
+			  <tr>
+				  <td class="td1"></td>
+				  <td><font color="#FF0000">4、网上预约只限学车报名驾校在杭州市区(不包括萧山、余杭)和富阳的学员。</font></td>
+			  </tr> 
+              
+				<tr>
+				  <td class="td1"></td>
+				  <td><font color="#FF0000">5、学员因故取消或更改预约必须提前24小时和所在驾校联系</font></td>
+			  </tr>
+				<tr>
+					<td width="257" class="td1"></td>
+					<td><font color="#FF0000">如有疑问联系驾驶员模拟培训预约中心 </font></td>
+				</tr>
+				<tr>
+					<td width="257" class="td1"></td>
+					<td><button type="submit" class="btn-2">下一步</button>
+				    <input type="hidden" name="token" id="token" value="c5ec3c7fafed4818667f6e8d6a81cdfe" /></td>
+				</tr>
+			</tbody>
+		</table>
+
+		</form>
+	</div>
+	
+</div>
+
+<script language="JavaScript" type="text/javascript">
+function Dodelivery(_id){
+	var _price = document.getElementById("delivery_price_"+_id).innerHTML;
+	var _priceCount = parseFloat(0.00)+parseFloat(_price);
+	document.getElementById("priceCount").innerHTML = number_format(_priceCount,2);
+	_priceCount = null;
+}
+function number_format(number)   {
+	if(number<0){
+		return '-'+outputDollars(Math.floor(Math.abs(number)-0)+'')+outputCents(Math.abs(number)-0);
+	}else{
+		return outputDollars(Math.floor(number-0)+'')   +   outputCents(number-0);
+	}
+}
+function outputDollars(number)   {
+	if(number.length <= 3){
+		return (number == '' ? '0' : number);
+	}else{
+		var mod = number.length%3;
+		var output = (mod == 0 ? '' : (number.substring(0,mod)));
+		for(i=0   ;   i<   Math.floor(number.length/3)   ;   i++)   {
+			if((mod == 0) && (i == 0))
+			output+= number.substring(mod+3*i,mod+3*i+3);
+			else
+			output+= ',' + number.substring(mod+3*i,mod+3*i+3);
+		}
+		return (output);
+	}
+}
+function outputCents(amount){
+	amount = Math.round(((amount)-Math.floor(amount))*100);
+	return (amount<10 ? '.0' + amount : '.' + amount);
+}
+function vdimgck()
+{
+	document.getElementById("vdimgck_img").src = '../include/vdimgck.php?'+Math.random();
+}
+</script>
+
+<br>
+<div class="footer">
+
+
+<p>杭州群和汽车驾驶模拟培训服务中心</p>
+<br>
+<p>杭州恒盈电子科技有限公司</p>
+
+</div>
+<!-- /footer -->
+<script src="http://s108.cnzz.com/stat.php?id=1382947&web_id=1382947&online=1&show=line" language="JavaScript" charset="gb2312"></script>
+
+
+</body>
+</html>
+
+
+
+2013-02-24 10:25:01,030 [] DEBUG sesamegu.AccessReserverPostPage - 休息3秒
+2013-02-24 10:25:01,092 [] DEBUG tsccm.ThreadSafeClientConnManager - Get connection: HttpRoute[{}->http://www.qc5qc.com:80], timeout = 0
+2013-02-24 10:25:01,093 [] DEBUG tsccm.ConnPoolByRoute - [HttpRoute[{}->http://www.qc5qc.com:80]] total kept alive: 1, total issued: 0, total allocated: 1 out of 50
+2013-02-24 10:25:01,093 [] DEBUG tsccm.ConnPoolByRoute - Getting free connection [HttpRoute[{}->http://www.qc5qc.com:80]][null]
+2013-02-24 10:25:01,093 [] DEBUG client.DefaultHttpClient - Stale connection check
+2013-02-24 10:25:01,095 [] DEBUG protocol.RequestAddCookies - CookieSpec selected: best-match
+2013-02-24 10:25:01,095 [] DEBUG protocol.RequestAddCookies - Cookie [version: 0][name: PHPSESSID][value: c41fkb1nprsv4kpqsi8g54ja74][domain: www.qc5qc.com][path: /][expiry: null] match [www.qc5qc.com:80/xqc/mlpxyy/mCheck.php]
+2013-02-24 10:25:01,096 [] DEBUG client.DefaultHttpClient - Attempt 1 to execute request
+2013-02-24 10:25:01,096 [] DEBUG conn.DefaultClientConnection - Sending request: POST /xqc/mlpxyy/mCheck.php HTTP/1.1
+2013-02-24 10:25:01,096 [] DEBUG http.wire - >> "POST /xqc/mlpxyy/mCheck.php HTTP/1.1[\r][\n]"
+2013-02-24 10:25:01,096 [] DEBUG http.wire - >> "Content-Length: 91[\r][\n]"
+2013-02-24 10:25:01,096 [] DEBUG http.wire - >> "Content-Type: application/x-www-form-urlencoded; charset=GBK[\r][\n]"
+2013-02-24 10:25:01,096 [] DEBUG http.wire - >> "Host: www.qc5qc.com:80[\r][\n]"
+2013-02-24 10:25:01,096 [] DEBUG http.wire - >> "Connection: Keep-Alive[\r][\n]"
+2013-02-24 10:25:01,096 [] DEBUG http.wire - >> "User-Agent: Apache-HttpClient/4.1 (java 1.5)[\r][\n]"
+2013-02-24 10:25:01,096 [] DEBUG http.wire - >> "Cookie: PHPSESSID=c41fkb1nprsv4kpqsi8g54ja74[\r][\n]"
+2013-02-24 10:25:01,097 [] DEBUG http.wire - >> "Cookie2: $Version=1[\r][\n]"
+2013-02-24 10:25:01,097 [] DEBUG http.wire - >> "[\r][\n]"
+2013-02-24 10:25:01,097 [] DEBUG http.headers - >> POST /xqc/mlpxyy/mCheck.php HTTP/1.1
+2013-02-24 10:25:01,097 [] DEBUG http.headers - >> Content-Length: 91
+2013-02-24 10:25:01,097 [] DEBUG http.headers - >> Content-Type: application/x-www-form-urlencoded; charset=GBK
+2013-02-24 10:25:01,097 [] DEBUG http.headers - >> Host: www.qc5qc.com:80
+2013-02-24 10:25:01,097 [] DEBUG http.headers - >> Connection: Keep-Alive
+2013-02-24 10:25:01,097 [] DEBUG http.headers - >> User-Agent: Apache-HttpClient/4.1 (java 1.5)
+2013-02-24 10:25:01,097 [] DEBUG http.headers - >> Cookie: PHPSESSID=c41fkb1nprsv4kpqsi8g54ja74
+2013-02-24 10:25:01,097 [] DEBUG http.headers - >> Cookie2: $Version=1
+2013-02-24 10:25:01,097 [] DEBUG http.wire - >> "userSsn=330682198108192017&province=01&city=01HJG100&token=c5ec3c7fafed4818667f6e8d6a81cdfe"
+2013-02-24 10:25:01,300 [] DEBUG http.wire - << "HTTP/1.1 200 OK[\r][\n]"
+2013-02-24 10:25:01,301 [] DEBUG http.wire - << "Date: Sun, 24 Feb 2013 02:23:38 GMT[\r][\n]"
+2013-02-24 10:25:01,301 [] DEBUG http.wire - << "Server: Apache/2.0.63 (Win32) PHP/5.2.10[\r][\n]"
+2013-02-24 10:25:01,301 [] DEBUG http.wire - << "X-Powered-By: PHP/5.2.10[\r][\n]"
+2013-02-24 10:25:01,301 [] DEBUG http.wire - << "Content-Length: 92[\r][\n]"
+2013-02-24 10:25:01,301 [] DEBUG http.wire - << "Keep-Alive: timeout=15, max=99[\r][\n]"
+2013-02-24 10:25:01,301 [] DEBUG http.wire - << "Connection: Keep-Alive[\r][\n]"
+2013-02-24 10:25:01,301 [] DEBUG http.wire - << "Content-Type: text/html[\r][\n]"
+2013-02-24 10:25:01,301 [] DEBUG http.wire - << "[\r][\n]"
+2013-02-24 10:25:01,301 [] DEBUG conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+2013-02-24 10:25:01,301 [] DEBUG http.headers - << HTTP/1.1 200 OK
+2013-02-24 10:25:01,302 [] DEBUG http.headers - << Date: Sun, 24 Feb 2013 02:23:38 GMT
+2013-02-24 10:25:01,302 [] DEBUG http.headers - << Server: Apache/2.0.63 (Win32) PHP/5.2.10
+2013-02-24 10:25:01,302 [] DEBUG http.headers - << X-Powered-By: PHP/5.2.10
+2013-02-24 10:25:01,302 [] DEBUG http.headers - << Content-Length: 92
+2013-02-24 10:25:01,302 [] DEBUG http.headers - << Keep-Alive: timeout=15, max=99
+2013-02-24 10:25:01,302 [] DEBUG http.headers - << Connection: Keep-Alive
+2013-02-24 10:25:01,302 [] DEBUG http.headers - << Content-Type: text/html
+2013-02-24 10:25:01,302 [] DEBUG client.DefaultHttpClient - Connection can be kept alive for 15000 MILLISECONDS
+2013-02-24 10:25:01,302 [] DEBUG sesamegu.AccessReserverPostPage - ----------------------------------------
+2013-02-24 10:25:01,302 [] DEBUG sesamegu.AccessReserverPostPage - HTTP/1.1 200 OK
+2013-02-24 10:25:01,303 [] DEBUG sesamegu.AccessReserverPostPage - Response content length: 92
+2013-02-24 10:25:01,303 [] DEBUG http.wire - << "[\r][\n]"
+2013-02-24 10:25:01,303 [] DEBUG http.wire - << "[\r][\n]"
+2013-02-24 10:25:01,303 [] DEBUG http.wire - << "<script language='javascript'>alert('[0xb8][0xc3][0xd1][0xa7][0xd4][0xb1][0xd2][0xd1][0xcd][0xea][0xb3][0xc9][0xc4][0xa3][0xc4][0xe2][0xc5][0xe0][0xd1][0xb5][0xa1][0xa3]');history.back(-1);</script>"
+2013-02-24 10:25:01,303 [] DEBUG tsccm.ThreadSafeClientConnManager - Released connection is reusable.
+2013-02-24 10:25:01,304 [] DEBUG tsccm.ConnPoolByRoute - Releasing connection [HttpRoute[{}->http://www.qc5qc.com:80]][null]
+2013-02-24 10:25:01,304 [] DEBUG tsccm.ConnPoolByRoute - Pooling connection [HttpRoute[{}->http://www.qc5qc.com:80]][null]; keep alive for 15000 MILLISECONDS
+2013-02-24 10:25:01,304 [] DEBUG tsccm.ConnPoolByRoute - Notifying no-one, there are no waiting threads

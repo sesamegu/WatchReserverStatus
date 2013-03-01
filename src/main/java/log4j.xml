@@ -3,7 +3,7 @@
 <log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
 	
     <appender name="PROJECT" class="org.apache.log4j.DailyRollingFileAppender">
-        <param name="file" value="E:/working/PicGetter/code/picgetter/log/log.txt"/>  
+        <param name="file" value="log/log.txt"/>  
         <param name="append" value="true"/>  
         <param name="encoding" value="GBK"/>
         <layout class="org.apache.log4j.PatternLayout">
@@ -16,7 +16,7 @@
     </appender>
 
 	<appender name="DEBUG" class="org.apache.log4j.DailyRollingFileAppender">
-		<param name="file" value="E:/working/PicGetter/code/picgetter/log/debug.log" />
+		<param name="file" value="log/debug.log" />
 		<param name="Append" value="true" />
 		<param name="DatePattern" value=".yyyy-MM-dd" />
 		<layout class="org.apache.log4j.PatternLayout">
@@ -29,7 +29,7 @@
 	</appender>
 
 	<appender name="ERROR" class="org.apache.log4j.DailyRollingFileAppender">
-		<param name="file" value="E:/working/PicGetter/code/picgetter/log/error.log" />
+		<param name="file" value="log/error.log" />
 		<param name="Append" value="true" />
 		<param name="DatePattern" value=".yyyy-MM-dd" />
 		<layout class="org.apache.log4j.PatternLayout">

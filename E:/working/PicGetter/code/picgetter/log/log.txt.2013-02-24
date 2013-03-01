@@ -1,0 +1,5 @@
+2013-02-24 10:25:01,304 [] INFO  sesamegu.AccessReserverPostPage - 
+
+<script language='javascript'>alert('该学员已完成模拟培训。');history.back(-1);</script>
+
+2013-02-24 10:25:01,305 [] INFO  sesamegu.AccessReserverPostPage - 不好意思，当前还不能报名！
