@@ -81,7 +81,7 @@ public class AccessReserverPostPage {
 
 		try {
 			httpost.setEntity(new UrlEncodedFormEntity(nvps, "GBK"));
-			HttpResponse response = HttpUtils.getHttpClient().execute(
+			HttpResponse response = HttpUtils.getHttpClient(false).execute(
 					HttpUtils.site, httpost);
 
 			HttpEntity entity = response.getEntity();

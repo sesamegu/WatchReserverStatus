@@ -23,8 +23,8 @@ public class App {
 		// 爬虫
 		AccessReserverPostPage abc = new AccessReserverPostPage();
 		while (!abc.isOk(SystemParams.id)) {
-			// TimeUnit.SECONDS.sleep(5);
-			TimeUnit.MINUTES.sleep(5);
+			TimeUnit.SECONDS.sleep(5);
+			// TimeUnit.MINUTES.sleep(5);
 		}
 		// 成功后发邮件
 		MailMail mm = (MailMail) context.getBean("mailMail");

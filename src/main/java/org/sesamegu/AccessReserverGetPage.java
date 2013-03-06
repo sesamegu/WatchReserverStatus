@@ -1,14 +1,11 @@
 package org.sesamegu;
 
-import java.util.List;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpGet;
-import org.apache.http.cookie.Cookie;
-import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.util.EntityUtils;
 import org.apache.log4j.Logger;
 
@@ -60,21 +57,10 @@ public class AccessReserverGetPage {
 		String result;
 		HttpGet httpget = new HttpGet(RESERVER_PAGE_URL);
 		try {
-			HttpResponse rsp = HttpUtils.getHttpClient().execute(
+			HttpResponse rsp = HttpUtils.getHttpClient(true).execute(
 					HttpUtils.site, httpget);
 			HttpEntity entity = rsp.getEntity();
 			result = EntityUtils.toString(entity, "GBK");
-			// result = Util.ConverterStringCode(result, EntityUtils
-			// .getContentCharSet(entity), "GBK");
-
-			List<Cookie> cookies = ((DefaultHttpClient) HttpUtils
-					.getHttpClient()).getCookieStore().getCookies();
-
-			HttpUtils.setLogoncookies(cookies);
-
-			// for (Cookie item : cookies) {
-			// log.info("cookie = " + item.toString());
-			// }
 
 		} catch (Exception e) {
 			httpget.abort();
